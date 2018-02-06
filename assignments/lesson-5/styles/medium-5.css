@@ -1,0 +1,53 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+  body {
+    font-size: 16px;
+    font-family: helvetica;
+    border: 2px solid #000000;
+    max-width: 100%;
+    /* Declare the base font-family - from google font api or other */
+  }
+
+
+
+  nav ul {
+    background-color: #01ae01;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+  }
+  nav ul li {
+    background-color: #01ae01;
+    font-size: 20px;
+    display: inline-block;
+    border:0;
+    margin: 10px;
+  }
+  nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    color: #ffff00;
+  }
+  nav ul li a:hover {
+    color: #000000;
+  }
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+
+  main figure img {
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+
+  section.forecast { display:inherit; }  /* show the 10-day forecast with the medium view and up */
+
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+}

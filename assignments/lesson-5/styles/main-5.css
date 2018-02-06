@@ -1,0 +1,162 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: helvetica;
+  border: 2px solid #000000;
+  max-width: 100%;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+  font-family: helvetica;
+  text-align: center;
+
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+  background-color: #563ee3;
+  height: 72px;
+}
+
+header h1 {
+  background-color: #563ee3;
+  color: #ffffff;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+header img {
+  width: 100px;
+  float: left;
+  padding: 0;
+  margin: 0;
+
+}
+
+header .subheading {
+  background-color: #563ee3;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav {
+  padding-top: 6px;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+}
+/* nav button {} */
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+nav ul li {
+  background-color: #01ae01;
+  font-size: 20px;
+  display: block;
+  margin: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 6px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li.active a {
+  color: #ffff00;
+}
+
+nav ul li a:hover {
+  color: #000000;
+}
+
+main {
+  border-bottom: 2px solid #000000;
+}
+
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+main div.current {
+  text-align: inherit;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main picture img {
+  float: center;
+  max-width: 200px;
+  margin: 0;
+  padding: 6px;
+}
+
+article {
+  max-width: 500px;
+  border-top:2px solid #000000;
+  font-family: georgia
+}
+
+p.town-article {
+  text-align: left;
+  padding: 10px;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  max-width: 100px; /* fill the page in the small/phone view */
+  margin:0 ;
+  float:left;
+  padding-right: 6px;
+
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+  background-color: #01ae01;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+}
+footer aside {
+  text-align: center;
+  padding: 16px;
+}
+
+
+footer>p {
+  padding:inherit;
+  margin: inherit;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+.high {
+  color: red;
+}
+
+.low { color: blue;}
+
+section.forecast {
+  display:none;
+
+}
