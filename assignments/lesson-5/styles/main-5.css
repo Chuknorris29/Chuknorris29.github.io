@@ -142,7 +142,7 @@ footer aside {
 
 
 footer>p {
-  text-align:center;
+  margin: auto;
   padding:inherit;
   margin: inherit;
 } /* This structure refers to p elements that are direct children of the footer element */
