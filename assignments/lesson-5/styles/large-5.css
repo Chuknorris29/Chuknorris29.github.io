@@ -1,6 +1,36 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-article p.town-article img { width: 29.333%; }
-  
+
+  nav ul {
+    text-align: left;
+  }
+
+
+  main figure {
+    margin: 0 ;
+    width:100%;
+
+  }
+
+  main figure img {
+  }
+
+  main picture img {
+    position: relative;
+    right: 43%;
+  }
+
+
+
+  article {
+    width: 50%;
+    padding:0;
+  }
+
+  article p.town-article img {
+  width: 29.333%;
+  }
+
+
 }

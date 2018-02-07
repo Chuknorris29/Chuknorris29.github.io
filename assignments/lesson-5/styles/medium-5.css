@@ -42,7 +42,10 @@
     text-decoration: none;
   }
   /* nav button { display:none; }   hamburger button does not need to be shown */
-
+  main picture img {
+    position: relative;
+    right: 35%;
+  }
 
   section.forecast {
     display:inherit;
@@ -68,7 +71,12 @@
     text-align:left;
   }
 
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+  article p.town-article img {
+    width: 62.666%;
+    float:right;
+    height: 62.666%;
+    padding-right: 16px;
+  }  /* responsive images */
 
 
 
