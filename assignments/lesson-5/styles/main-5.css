@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   font-family: helvetica;
   border: 2px solid #000000;
-  max-width: 100%;
+  width: 100%;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -25,28 +25,27 @@ header, nav, main, footer {
 
 header {
   background-color: #563ee3;
-  height: 72px;
+  height: 80px;
+  border-bottom: 2px solid #000000;
 }
 
 header h1 {
-  background-color: #563ee3;
   color: #ffffff;
   padding-bottom: 10px;
-  margin: 0;
+  margin:0 ;
   font-size: 20px;
   text-decoration: underline;
 }
 
 header img {
   width: 100px;
-  float: left;
-  padding: 0;
-  margin: 0;
-
+  height: 80px;
+  float:left;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
 }
 
 header .subheading {
-  background-color: #563ee3;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -54,9 +53,9 @@ header .subheading {
 }
 
 nav {
+
   padding-top: 6px;
   border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
 }
 /* nav button {} */
 nav ul {
@@ -111,31 +110,30 @@ main picture img {
 }
 
 article {
-  max-width: 500px;
+  max-width: 100%;
   border-top:2px solid #000000;
   font-family: georgia
 }
 
 p.town-article {
   text-align: left;
-  padding: 10px;
 }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  max-width: 100px; /* fill the page in the small/phone view */
-  margin:0 ;
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph                                                  elements within artcle elements */
   float:left;
-  padding-right: 6px;
+  width: 100%; /* fill the page in the small/phone view */
+  height: 300px;
 
 }
+
+
 
 footer {
   font-size: smaller;
-  text-align: center;
   background-color: #01ae01;
   color: #ffffff;
   padding: 0;
   margin: 0;
-  max-height: 200px;
+  max-height: 400px;
 }
 footer aside {
   text-align: center;
@@ -144,6 +142,7 @@ footer aside {
 
 
 footer>p {
+  text-align:center;
   padding:inherit;
   margin: inherit;
 } /* This structure refers to p elements that are direct children of the footer element */

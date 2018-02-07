@@ -1,53 +1,77 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
-  body {
-    font-size: 16px;
+  header, nav, main, footer {
     font-family: helvetica;
-    border: 2px solid #000000;
-    max-width: 100%;
-    /* Declare the base font-family - from google font api or other */
+    text-align: center ;
+    }
+
+  header{
+    height: 120%;
+  }
+  header h1 {
+    text-align: left;
+    position: relative;
+    left: 20px;
+    font-size: 40px;
   }
 
+  header div.subheading {
+    text-align: left;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+  }
 
-
-  nav ul {
+  nav {
     background-color: #01ae01;
-    text-align: center;
-    list-style-type: none;
     margin: 0;
     padding: 0;
-
-
   }
+  nav ul {
+    list-style-type: none;
+  }
+
   nav ul li {
-    background-color: #01ae01;
     font-size: 20px;
     display: inline-block;
-    border:0;
     margin: 10px;
   }
   nav ul li a {
     display: block;
-    color: #ffffff;
     text-decoration: none;
   }
-  nav ul li.active a {
-    color: #ffff00;
-  }
-  nav ul li a:hover {
-    color: #000000;
-  }
-  nav button { display:none; }  /* hamburger button does not need to be shown */
-
-  main figure img {
-    max-width: 600px;
-    max-height: 600px;
-  }
+  /* nav button { display:none; }   hamburger button does not need to be shown */
 
 
-  section.forecast { display:inherit; }  /* show the 10-day forecast with the medium view and up */
+  section.forecast {
+    display:inherit;
+    border-top: 2px solid #000000;
+  }  /* show the 10-day forecast with the medium view and up */
+  table {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  th {
+    background-color: #563ee3;
+    color: #ffffff
+  }
+
+  table, th, td {
+    border: 1px solid #000000;
+
+  }
+
+
+  p.town-article {
+    text-align:left;
+  }
 
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+
+
+
 
 }
