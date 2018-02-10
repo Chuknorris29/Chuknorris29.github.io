@@ -120,22 +120,11 @@ main figure img {
 }
 
   .current{
-	  margin: auto;
-	  text-align:left;
-	  max-width:5em;
-	  height:8em;
-	  padding: 2px
+	  padding: 2px;
+		font-size:2em;
+		 font-weight: bold;
 }
 
-.current>p{
-	  left:100%;
-	  margin-top:0;
-	  margin-bottom:0;
-	  width:auto;
-	  font-size: 1.5em;
-	  font-weight: bold;
-		padding: 2px;
-}
 
 .current img{
 	width: 110px;
