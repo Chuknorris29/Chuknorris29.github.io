@@ -137,9 +137,9 @@ main figure img {
 		padding: 2px;
 }
 
-.current picture img{
-	width:5rem;
-	  height: 5rem;
+.current img{
+	width: 110px;
+	height: 110px;
 	  padding: 2px;
 }
 
