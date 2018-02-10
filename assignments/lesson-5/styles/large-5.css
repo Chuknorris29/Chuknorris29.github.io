@@ -2,39 +2,29 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
   header, nav, main, footer,body{
-    max-width:1536px;
+	max-width:1536px;
   }
   body {
-    text-align: center;
+	text-align: center;
 
   }
 
   nav ul {
-    text-align: center;
+	text-align: center;
   }
 
   main {
-    position: relative;
-    width: 100%;
+	position: relative;
+	width: 100%;
 
   }
 
 
-  article {
-    display:flex;
-    flex-flow: column;
-    width: 100%;
-    padding: 0;
+	article{
+
   }
 
 
-
-  p.town-article img{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
 
   article p.town-article img {
   width: 29.333%;
