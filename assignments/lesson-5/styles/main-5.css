@@ -123,6 +123,7 @@ main figure img {
 	  padding: 2px;
 		font-size:2em;
 		 font-weight: bold;
+
 }
 
 
@@ -130,6 +131,7 @@ main figure img {
 	width: 110px;
 	height: 110px;
 	  padding: 2px;
+	vertical-align: middle;
 }
 
 section.weatherdata h3{
