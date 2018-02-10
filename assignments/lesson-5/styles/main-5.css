@@ -126,8 +126,8 @@ main figure img {
 
 }
 
-.container{
-	float:left
+.left{
+	display:none;
 }
 .current img{
 	width: 110px;
