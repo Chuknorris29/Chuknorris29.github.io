@@ -1,7 +1,7 @@
 * {
-  /*box-sizing: border-box;
-  */
-	border: 1px solid #000000;
+  box-sizing: border-box;
+
+	/*border: 1px solid #000000;*/
 
 }
 
@@ -125,9 +125,11 @@ main figure img {
 		 font-weight: bold;
 
 }
-
-.left{
+.right{
 	display:none;
+}
+.left{
+
 }
 .current img{
 	width: 110px;
@@ -137,6 +139,9 @@ main figure img {
 
 }
 
+#high, #low{
+	display:inline;
+}
 section.weatherdata h3{
   padding:1em;
 	width: 90%;
