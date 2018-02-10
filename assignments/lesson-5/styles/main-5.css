@@ -126,7 +126,9 @@ main figure img {
 
 }
 
-
+.container{
+	float:left
+}
 .current img{
 	width: 110px;
 	height: 110px;
