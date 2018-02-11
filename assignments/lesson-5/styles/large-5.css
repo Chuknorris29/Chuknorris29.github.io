@@ -1,99 +1,93 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-  header, nav, main, footer,body{
-	max-width:1536px;
-  }
-  body {
-	text-align: center;
-
-  }
-
-  nav ul {
-	text-align: center;
-  }
-
-
-
-
+	header, nav, main, footer,body{
+		max-width: 1536px;
+	}
 
 	main {
 		width: 100%;
-		position:relative;
+		position: relative;
 	}
 
 	main h2{
-		margin:0;
+		margin: 0;
 		font-size: 1.5em;
-		text-align:center;
+		text-align: center;
 	}
 
 	main figure {
 		padding: 0;
 		margin: 0;
-		width:100%;
-		height:200px;
+		width: 100%;
+		height: 200px;
 	}
-
-	main figure img {
-
-
-
-	}
-
 
 
 	.current{
 		padding: 2px;
-		font-size:2em;
+		font-size: 2em;
 		font-weight: bold;
 
 	}
 
 	.left{
-		display:none;
+		display: none;
 	}
-	.current img{
+
+	.current picture img {
 		width: 110px;
 		height: 110px;
 		padding: 2px;
 		vertical-align: middle;
-
 	}
 
+	.current{
+		margin-right: 100px;
+	}
 
+	.highlow{
+		margin-left:50px;
+		margin-right: 50px;
+	}
+
+	.conditions{
+		margin-left:100px;
+
+	}
 	section.weatherdata{
 		position: absolute;
-
-		top:200px;
-		left:0;
-		height:200px;
-		width:100%;
+		top: 200px;
+		left: 0;
+		height: 200px;
+		width: 100%;
 		padding: 2px;
 	}
 
 	.actualnumber{
 		font-weight: bold;
 		font-size: 20px
-
 	}
+
 	#high, #low{
-		display:block;
+		display: block;
 	}
 
 	.conditions, .highlow, .current{
-		display:inline-block;
+		display: inline-block;
 		padding: 50px;
 		vertical-align: middle;
 	}
+
 	.right{
-		display:inline;
+		display: inline;
 	}
+
 	section.forecast {
-		position:absolute;
+		position: absolute;
 		top: 400px;
-		height:50px;
-		width:100%;
+		height: 50px;
+		width :100%;
 		font-weight: bold;
 		display: block;
 		border-top: 2px solid #000000;
@@ -101,22 +95,18 @@
 		font-size: 22px;
 	}
 
-
 	article{
-		position:absolute;
-		top:600px;
-
+		position: absolute;
+		top: 600px;
 	}
 
-
-
-  article p.town-article img {
-  width: 29.333%;
-  height: 29.33%;
-  }
+	article p.town-article img {
+		width: 29.333%;
+		height: 29.33%;
+	}
 
 	footer{
-		position:absolute;
-		top:1153px;
+		position: absolute;
+		top:1137px;
 	}
 }
