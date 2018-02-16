@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+
+}
+body {
+	position: relative;
+	font-family: Open Sans, sans-serif, Helvetica;
+	border: 2px solid #000000;
+	width: 100%;
+}
+
+header, nav, main, footer{
+	font-size: 16px;
+
+}
+/* start header*/
+header {
+
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #563ee3;
+	border-bottom: 2px solid #000000;
+}
+
+header h1 {
+	margin: 0;
+	padding-bottom: .3em;
+	color: #ffffff;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+header picture img {
+	margin: 0 2% 0 0;
+	border-bottom: 2px solid #000000;
+	float: left;
+	padding: 0;
+	max-width: 6rem;
+	height: auto;
+	border-right: 2px solid #000000;
+}
+
+header .subheading {
+	height: 2rem;
+	font-size: .90em;
+	color: #ffffff;
+	padding: 0;
+
+}
+
+/* start nav */
+nav {
+	background-color: #01ae01;
+	width: 100%;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+
+.hamburger{
+	margin: 0 0 0 2%;
+	display: block;
+	background-color: #01ae01;
+	border: 0;
+	width: 30px;
+	height: 30px;
+
+}
+
+nav ul.hide{
+	display:none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+nav ul li {
+	background-color: #01ae01;
+	font-size: 1em;
+	display: block;
+	border-width: 2px 0 1px 2px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+nav ul li a {
+	display: block;
+	padding: 6px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav ul li.active a {
+	color: #ffff00;
+}
+
+nav ul li a:hover {
+	color: #000000;
+}
+
+/* start main */
+
+main {
+	clear:both;
+}
+
+
+main h2{
+	margin:0;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+main figure{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+main figure img {
+	width: 100%;
+	max-height: 200px;
+	min-height: 150px;
+
+}
+
+.current {
+	padding: 2px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.right{
+	display: none;
+}
+
+.current picture img{
+	width: 110px;
+	height: 110px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+#high, #low{
+	display: inline;
+}
+
+section.weatherdata h3{
+	padding: 1em;
+	width: 90%;
+	margin: auto;
+}
+
+section.weatherdata{
+	text-align: center;
+	padding: 2px;
+}
+
+.actualnumber{
+	font-weight: bold;
+	font-size: 20px
+}
+
+
+article {
+	width: 100%;
+	font-family: Georgia, "Times New Roman",sans-serif;
+	border-top: 2px solid #000000;
+}
+
+article h3{
+	text-align: center;
+}
+
+article p{
+	padding: .5em;
+	margin: 0;
+	text-indent: 1em;
+}
+
+
+article p.town-article img {
+	float: left;
+	width: 100%;
+	max-height: 15em;
+
+}
+
+footer {
+	display:block;
+	font-size: smaller;
+	background-color: #01ae01;
+	color: #ffffff;
+
+}
+
+footer aside {
+	padding: 5px;
+	width: 75%;;
+	margin: auto;
+	text-align:center;
+}
+
+
+footer>p {
+	text-align: center;
+	width: 75%;
+	margin: auto;
+}
+
+section.forecast {
+	display: none;
+}
+
+.clearfix{
+	content:"";
+	display:table;
+	clear:both;
+}
+

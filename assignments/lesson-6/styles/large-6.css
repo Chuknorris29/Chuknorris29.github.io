@@ -1,0 +1,122 @@
+@media only screen and (min-width: 64em) {
+	/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+	header, nav, main, footer,body{
+		max-width: 1536px;
+	}
+
+	nav{
+		text-align: left;
+	}
+
+	main {
+		width: 100%;
+		position: relative;
+	}
+
+	main h2{
+		margin: 0;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	main figure {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	main figure img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.current{
+		padding: 2px;
+		font-size: 1.5em;
+		font-weight: bold;
+
+	}
+
+	#city{
+		display: block;
+		width: 25%;
+		position: absolute;
+		left: 500px;
+		top: 75px;
+	}
+
+	.left{
+		display: none;
+	}
+
+	.current picture img {
+		width: 300px;
+		height: 200px;
+		padding: 2px;
+		vertical-align: middle;
+	}
+
+
+	.highlow{
+		margin-left:50px;
+		margin-right: 50px;
+	}
+
+	.conditions{
+
+	}
+	section.weatherdata{
+		position: absolute;
+		top: 250px;
+		left: 0;
+		height: 200px;
+		width: 100%;
+	}
+
+	.actualnumber{
+		font-weight: bold;
+		font-size: 20px
+	}
+
+	#high, #low{
+		display: block;
+	}
+
+	.conditions, .highlow, .current{
+		display: inline-block;
+		padding: 50px;
+		vertical-align: middle;
+	}
+
+	.right{
+		display: inline;
+	}
+
+	section.forecast {
+		position: absolute;
+		top: 503px;
+		height: 50px;
+		width :100%;
+		font-weight: bold;
+		display: block;
+		border-top: 2px solid #000000;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	article{
+		position: absolute;
+		top: 674px;
+	}
+
+	article p.town-article img {
+		width: 29.333%;
+		height: 29.333%;
+	}
+
+	footer{
+		position: absolute;
+		top:1137px;
+	}
+}
