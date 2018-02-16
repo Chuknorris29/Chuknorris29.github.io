@@ -1,7 +1,9 @@
 @media only screen and (min-width: 64em) {
 	/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-	header, nav, main, footer,body{
+
+
+	header, nav, main, footer, body{
 		max-width: 1536px;
 	}
 
@@ -35,14 +37,13 @@
 		padding: 2px;
 		font-size: 1.5em;
 		font-weight: bold;
-
 	}
 
-	#city{
+	#city {
 		display: block;
 		width: 25%;
 		position: absolute;
-		left: 500px;
+		left: 40%;
 		top: 75px;
 	}
 
@@ -58,20 +59,17 @@
 	}
 
 
-	.highlow{
-		margin-left:50px;
-		margin-right: 50px;
-	}
-
 	.conditions{
-
+		display: block;
 	}
+
 	section.weatherdata{
 		position: absolute;
 		top: 250px;
 		left: 0;
-		height: 200px;
+
 		width: 100%;
+		border-right: 2px solid #000;
 	}
 
 	.actualnumber{
@@ -96,18 +94,20 @@
 	section.forecast {
 		position: absolute;
 		top: 503px;
-		height: 50px;
 		width :100%;
 		font-weight: bold;
 		display: block;
 		border-top: 2px solid #000000;
 		text-align: center;
 		font-size: 18px;
+		border-right: 2px solid #000;
 	}
 
 	article{
 		position: absolute;
 		top: 674px;
+		height: 400px;
+		border-top: 2px solid #000;
 	}
 
 	article p.town-article img {
@@ -118,5 +118,6 @@
 	footer{
 		position: absolute;
 		top:1137px;
+
 	}
 }
