@@ -41,23 +41,20 @@
 			</ul>
 		</nav>
 		<main>
-			<figure class="clearfix">
-				<img src="images/franklin-default.jpg" alt="picture of franklin" sizes="100vw"
-					 srcset="images/franklin-small.jpg 550w,
-					images/franklin-medium.jpeg 1024w,
-					images/franklin-large.jpeg 1500w">
-
-			</figure>
+			<picture id="main-pic" class="clearfix">
+				<source srcset="images/franklin-small.jpg" media="(max-width: 37.5em)">
+				<source srcset="images/franklin-medium.jpeg" media="(max-width: 64em)">
+				<source srcset="images/franklin-large.jpeg">
+				<img id="main-img" src="images/franklin-default.jpg" alt="picture of franklin">
+			</picture>
 			<section class="weatherdata">
 				<h2 id="city">The City of Franklin</h2>
 				<!--<h3>Weather Summary:</h3>-->
 				<div class="current">
 					<span class="left">Sunny</span>
-					<picture>
-						<img src="images/sky-sunny-small.jpg" alt="sun in the sky" sizes="100vw"
-						srcset="images/sky-sunny-small.jpg 200w,
-								images/sky-sunny-medium.jpg 300w">
-						</picture>
+					<picture id="current-pic">
+						<img id="current-img" class="clearfix" src="images/sky-sunny-medium.jpg" alt="sunny sky">
+					</picture>
 					<span class="right">Sunny</span>
 				</div>
 				<div class="highlow">
