@@ -11,7 +11,7 @@ main {
 	align-items: center;
 }
 
-table{
+table {
 	font-family: 'Ubuntu', sans-serif;
 	margin: 3em;
 	text-align: center;
@@ -20,26 +20,23 @@ table{
 	border: 1px solid gray;
 }
 
-
-thead{
+thead {
 	background-color: #7fb9c2;
 	font-size: 1.5em;
 	font-weight: bold;
 	border: 1px solid gray;
 }
 
-
-
 tr, td, th {
 	border: 1px solid gray;
 	padding: 5px
 }
-tbody tr:nth-child(odd){
+tbody tr:nth-child(odd) {
 	background-color: #e7ffed;
 
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
 	background-color: #e7f0ed;
 	color: #000;
 }
@@ -58,7 +55,7 @@ tbody tr td:first-child.emphasis  {
 	font-style:italic;
 }
 
-tbody tr td:nth-child(3).emphasis{
+tbody tr td:nth-child(3).emphasis {
 	background-color: #628ca6;
 	color: #fff;
 }
