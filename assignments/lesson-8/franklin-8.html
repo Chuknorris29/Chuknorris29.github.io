@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Franklin - Weather / Accurate Weather</title>
+		<meta name="author" content="Charles Mikolyski">
+		<meta name="description" content="Current and Future Weather Conditions for the Franklin Area">
+		<!-- external style references in the proper cascading order -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<!--Google API font reference-->
+		<link href="styles/normalize.css" rel="stylesheet">
+		<!-- normalize useragent/browser defaults -->
+		<link href="styles/main-8.css" rel="stylesheet">
+		<!-- default styles - small/phone views -->
+		<link href="styles/medium-8.css" rel="stylesheet">
+		<!-- medium/tablet views -->
+		<link href="styles/large-8.css" rel="stylesheet">
+		<!-- large/wide/desktop views -->
+	</head>
+	<body>
+		<header>
+			<div class="pic-h1-container">
+				<picture id="logo">
+					<img src="images/accurate-weather-logo.png" alt="site temperature gauge logo">
+				</picture>
+				<h1>Accurate Weather</h1>
+			</div>
+			<div class="subheading">
+				Accurate Weather Equals Accurate Results!
+			</div>
+		</header>
+
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+			<ul id="primary-nav" class="hide">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="franklin-8.html">Franklin</a></li>
+				<li><a href="#">Greenville</a></li>
+				<li><a href="#">Springfield</a></li>
+				<li><a href="stormcenter-8.html">Storm Center</a></li>
+				<li><a href="gallery-8.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section class="weatherdata">
+				<picture id="main-pic">
+					<source srcset="images/franklin-small.jpg" media="(max-width: 37.5em)">
+					<source srcset="images/franklin-medium.jpeg" media="(max-width: 64em)">
+					<source srcset="images/franklin-large.jpeg">
+					<img id="main-img" src="images/franklin-default.jpg" alt="picture of franklin">
+				</picture>
+				<div id="main-data-container">
+					<h2 id="city">The City of Franklin</h2>
+					<div class="current">
+						<span class="left">Sunny</span>
+						<picture id="current-pic">
+							<source srcset="images/sky-sunny-small.jpg" media="(max-width: 37.5em)">
+							<source srcset="images/sky-sunny-medium.jpg" media="(max-width: 64em)">
+							<img id="current-img" src="images/sky-sunny-medium.jpg" alt="sunny sky">
+						</picture>
+						<span class="right">Sunny</span>
+					</div>
+					<div class="highlow">
+						<p id="high">High: <span class="actualnumber"> <span id="inputhigh">72</span>&deg;F</span></p>
+						<p id="low">Low: <span class="actualnumber"><span id="inputlow">57</span>&deg;F</span></p>
+					</div>
+					<div class="conditions">
+						<p id="precipitation">Precipitation: <span class="actualnumber"> 30% </span></p>
+						<p id="windSpeed">Wind Speed: <span class="actualnumber"><span id="inputspeed">7</span>MPH NE</span></p>
+						<p id="windChill">Wind Chill: <span class="actualnumber"><span id="currentChill">Wind chill place holder</span>&deg;F</span></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="forecast">
+				<h3>10 Day Forecast</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Day 1</th>
+							<th>Day 2</th>
+							<th>Day 3</th>
+							<th>Day 4</th>
+							<th>Day 5</th>
+							<th>Day 6</th>
+							<th>Day 7</th>
+							<th>Day 8</th>
+							<th>Day 9</th>
+							<th>Day 10</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>89&deg;F</td>
+							<td>87&deg;F</td>
+							<td>78&deg;F</td>
+							<td>75&deg;F</td>
+							<td>72&deg;F</td>
+							<td>72&deg;F</td>
+							<td>79&deg;F</td>
+							<td>83&deg;F</td>
+							<td>85&deg;F</td>
+							<td>89&deg;F</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<article>
+				<h3>Rain Saves Tulips</h3>
+				<picture id="article-pic">
+					<img src="images/optimized-tulip-lily-nature-flowers-57429.jpeg" alt="picture of a tulip">
+				</picture>
+				<div id="para-container">
+					<p id="para-one">
+						I planted my Tulips in the spring, like every good gardener should. It required work, but I loved the exercise. The Tulips seemed to be doing well. However, we had been going through a dry spell with no rain in sight, and I had to leave on a business trip for a week. Who would stay and water my tulips? I hadn't a clue. My family lived far away, and my neighbors were stand-offish. So, I prayed that my Tulips would be protected and watered while I was gone, hoping for a miracle.
+					</p>
+					<p id="para-two">
+						During my trip, I checked the weather everyday. The forecast looked grim. I thought my tulips were doomed. Then, one morning I woke up, and quickly pulled up Accurate Weather on my phone. To my great surpirse, it had rained over night! It was a miracle!
+					</p>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<aside>
+				Accurate Weather 123 Main St. Franklin, MU 83454 (999)999.9999 weatherman@accurateweather.com
+			</aside>
+			<p class="footer-bar">&copy; 2017 All Rights Reserved | Accurate Weather | <span id="currentdate"></span>
+			</p>
+		</footer>
+
+		<script src="scripts/hamburger-8.js"></script>
+		<script src="scripts/currentdate-8.js"></script>
+		<script src="scripts/windchill-8.js"></script>
+	</body>
+</html>

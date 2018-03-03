@@ -102,12 +102,13 @@ nav ul li {
 	border-width: 2px 0 1px 0px;
 	border-style: solid;
 	border-color: #000000;
+	text-decoration: none;
 }
 
 nav ul li a {
 	padding: 6px;
 	color: #ffffff;
-	text-decoration: none;
+
 }
 
 nav ul li.active a {
@@ -203,11 +204,17 @@ section.weatherdata {
 
 }
 
+section.forecast {
+	display: none;
+}
+
 .actualnumber {
 	font-weight: bold;
 	font-size: 1.3em
 }
 
+
+/* start article */
 article {
 	display: flex;
 	flex-flow: column nowrap;
@@ -230,6 +237,7 @@ article p.town-article img {
 	max-height: 15em;
 }
 
+/* start footer */
 footer {
 	display: flex;
 	flex-flow: column nowrap;
@@ -255,19 +263,17 @@ footer>p {
 	padding: 5px;
 }
 
-section.forecast {
-	display: none;
-}
-
+/* start gallery */
 h2.gallery {
 	margin: 1%;
 	text-align: center;
 
 
 }
-h3.gallery {
+h3.hide {
 	display: none;
 }
+
 
 .grid-container {
 	margin-top: 1%;
@@ -291,3 +297,167 @@ h3.gallery {
 	max-height: 13em;
 }
 
+/* start storm form  */
+
+#main-storm-center {
+	width:100%;
+	align-self: stretch;
+
+}
+
+main picture.storm-center {
+	display: flex;
+	width: 100%;
+	min-height: 150px;
+	max-height: 200px;
+}
+
+h3 {
+	margin: 0;
+}
+section.wrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:center;
+	margin-bottom: 2em;
+}
+
+p.stormcenter {
+	text-align: center;
+
+}
+section form {
+	display: block;
+	width: 80%;
+	box-shadow: 7px 10px 15px;
+	padding: 5px;
+	border: 2px solid #000;
+}
+
+section form label input {
+	display: block;
+	padding: .5em;
+	margin: .5em;
+	margin-left: 0;
+	width: 90%;
+}
+section form label{
+	display: block;
+	padding: .5em;
+}
+
+section form label span {
+	font-weight: bold;
+	margin-left: 0;
+}
+
+input.radio:radio {
+	display: inline;
+	padding: .2em;
+	margin: .2em;
+	box-shadow: none;
+}
+
+
+fieldset{
+	border: 0;
+	padding: .5em;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
+
+#rating {
+ width: 75%;
+}
+
+fieldset p{
+	width: 75%;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+#ratingvalue{
+	font-size: 1.75em;
+}
+
+form fieldset select{
+	display: block;
+	padding: .5em;
+	margin: .5em;
+	margin-left: 0;
+	width: 90%;
+}
+
+form label textarea {
+	resize: none;
+	width: 90%;
+	height: 10em
+}
+
+.required:after {
+	content: " *";
+	color: red;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+input:required:valid:focus {
+	box-shadow: 1px 2px 5px  #01ae01 inset;
+	border: 0;
+}
+
+input:required:invalid:focus {
+	box-shadow: 1px 1px 4px red inset;
+}
+
+input:valid:focus {
+	box-shadow: 1px 1px 4px #01ae01 inset;
+}
+
+.severity:after {
+	content: " (1 is very mild and 10 is very severe)";
+	font-size: .75em;
+}
+
+input#rating {
+	box-shadow: none;
+}
+
+input#subBtn {
+	-webkit-appearance: none;
+	width: 50%;
+	max-width: 15em;
+	color: #ffffff;
+	background-color: #01ae01;
+	border: 1px solid #000;
+
+}
+
+input.radio:valid:focus {
+	box-shadow: none;
+}
+input.radio {
+	display: inline;
+	padding: .2em;
+	margin: .2em;
+
+
+}
+
+/* thank you */
+
+main.thanks {
+	display: block;
+	text-align: center;
+	min-height: 30em;
+}
