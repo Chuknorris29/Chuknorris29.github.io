@@ -353,7 +353,7 @@ section form label span {
 	margin-left: 0;
 }
 
-input.radio:radio {
+input.radio {
 	display: inline;
 	padding: .2em;
 	margin: .2em;
@@ -434,7 +434,6 @@ input#rating {
 }
 
 input#subBtn {
-	-webkit-appearance: none;
 	width: 50%;
 	max-width: 15em;
 	color: #ffffff;
@@ -445,13 +444,6 @@ input#subBtn {
 
 input.radio:valid:focus {
 	box-shadow: none;
-}
-input.radio {
-	display: inline;
-	padding: .2em;
-	margin: .2em;
-
-
 }
 
 /* thank you */
