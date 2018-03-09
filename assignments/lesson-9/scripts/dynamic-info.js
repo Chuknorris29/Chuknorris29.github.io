@@ -55,4 +55,3 @@ function showtown(jsonObj) {
 	}
 }
 
-console.log("test");
