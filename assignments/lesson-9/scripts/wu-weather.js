@@ -1,5 +1,5 @@
 
-var requestURL = "http://api.wunderground.com/api/da7e8c870bb11040/conditions/q/MN/Franklin.json";
+var requestURL = "https://api.wunderground.com/api/da7e8c870bb11040/conditions/q/MN/Franklin.json";
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
@@ -16,7 +16,7 @@ request.onload = function() {
 	document.getElementById("currentChill").innerHTML = weatherInfo.current_observation.windchill_f;
 }
 
-var requestURL2 = "http://api.wunderground.com/api/da7e8c870bb11040/forecast/q/MN/Franklin.json"
+var requestURL2 = "https://api.wunderground.com/api/da7e8c870bb11040/forecast/q/MN/Franklin.json"
 var request2 = new XMLHttpRequest();
 request2.open("GET", requestURL2);
 request2.responseType = "json";
