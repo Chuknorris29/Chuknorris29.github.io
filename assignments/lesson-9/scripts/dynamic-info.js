@@ -7,7 +7,7 @@ request.send();
 request.onload = function() {
 	var townsData = request.response;
 	showtown(townsData);
-	console.log("test");
+
 
 }
 
@@ -54,3 +54,5 @@ function showtown(jsonObj) {
 
 	}
 }
+
+console.log("test");
