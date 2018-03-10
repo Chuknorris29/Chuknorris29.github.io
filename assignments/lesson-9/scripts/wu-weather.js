@@ -13,10 +13,9 @@ request.onload = function() {
 	document.getElementById("current-cond-left").innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById("feels-like").innerHTML = weatherInfo.current_observation.feelslike_f;
 	document.getElementById("inputspeed").innerHTML = weatherInfo.current_observation.wind_mph;
-	var x =  weatherInfo.current_observation.icon_url;
-	var y = x.replace("http://", "https://");
-	document.getElementById("current-img").src = y;
+	document.getElementById("current-img").src = weatherInfo.current_observation.icon_url.replace("http://", "https://");
 	document.getElementById("currentChill").innerHTML = weatherInfo.current_observation.windchill_f;
+	console.log(weatherInfo.current_observation.icon_url.replace("http://", "https://"));
 }
 
 var requestURL2 = "https://api.wunderground.com/api/da7e8c870bb11040/forecast/q/MN/Franklin.json"
