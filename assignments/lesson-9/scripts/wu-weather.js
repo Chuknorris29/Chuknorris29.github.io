@@ -6,13 +6,16 @@ request.responseType = "json";
 request.send();
 request.onload = function() {
 	var weatherInfo = request.response;
-	console.log(weatherInfo)
+	/*weatherInfo = weatherInfo.replace("http://", "https://");*/
+	console.log(weatherInfo);
 
 	document.getElementById("current-cond-right").innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById("current-cond-left").innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById("feels-like").innerHTML = weatherInfo.current_observation.feelslike_f;
 	document.getElementById("inputspeed").innerHTML = weatherInfo.current_observation.wind_mph;
-	document.getElementById("current-img").src = weatherInfo.current_observation.icon_url;
+	var x =  weatherInfo.current_observation.icon_url;
+	var y = x.replace("http://", "https://");
+	document.getElementById("current-img").src = y;
 	document.getElementById("currentChill").innerHTML = weatherInfo.current_observation.windchill_f;
 }
 
