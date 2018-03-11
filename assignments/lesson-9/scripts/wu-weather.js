@@ -6,7 +6,6 @@ request.responseType = "json";
 request.send();
 request.onload = function() {
 	var weatherInfo = request.response;
-	/*weatherInfo = weatherInfo.replace("http://", "https://");*/
 	console.log(weatherInfo);
 
 	document.getElementById("current-cond-right").innerHTML = weatherInfo.current_observation.weather;

@@ -197,7 +197,18 @@ main h2 {
 }
 
 #forecasttext {
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#box {
+	margin-right: .5em;
+	font-size: 1.5em;
+}
+
+#currentforecast {
+	flex-basis: 50%;
 }
 
 section.weatherdata {
