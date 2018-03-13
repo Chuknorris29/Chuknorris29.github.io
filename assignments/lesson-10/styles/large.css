@@ -88,10 +88,9 @@
 	section.forecast {
 		width :100%;
 		font-weight: bold;
-		display: inherit;
 		border-top: 2px solid #000000;
 		text-align: center;
-		font-size: 18px;
+		font-size: 1em;
 	}
 
 	article{
@@ -103,10 +102,10 @@
 	}
 
 	#article-pic {
-		width: 29.333%;
+
 		flex-basis: 40%;
 		align-self: stretch;
-		height: 29.333%;
+
 	}
 
 	footer aside {

@@ -10,7 +10,7 @@ request.onload = function() {
 
 	document.getElementById("current-cond-right").innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById("current-cond-left").innerHTML = weatherInfo.current_observation.weather;
-	document.getElementById("feels-like").innerHTML = weatherInfo.current_observation.feelslike_f;
+	document.getElementById("temp").innerHTML = weatherInfo.current_observation.temp_f;
 	document.getElementById("inputspeed").innerHTML = weatherInfo.current_observation.wind_mph;
 	document.getElementById("current-img").src = weatherInfo.current_observation.icon_url.replace("http://", "https://");
 	document.getElementById("currentChill").innerHTML = weatherInfo.current_observation.windchill_f;
