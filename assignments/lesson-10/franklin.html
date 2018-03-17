@@ -36,7 +36,7 @@
 			<button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 			<ul id="primary-nav" class="hide">
 				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="franklin.html">Franklin</a></li>
+				<li><a href="franklin.html">Franklin</a></li>
 				<li><a href="greenville.html">Greenville</a></li>
 				<li><a href="springfield.html">Springfield</a></li>
 				<li><a href="stormcenter.html">Storm Center</a></li>
@@ -63,11 +63,12 @@
 					<div class="highlow">
 						<p id="high">High: <span class="actualnumber"> <span id="inputhigh">90</span>&deg;F</span></p>
 						<p id="low">Low: <span class="actualnumber"><span id="inputlow">66</span>&deg;F</span></p>
+						<p id="current-temp">Current Temperature: <span class="actualnumber"> <span id="temp">placeholder</span>&deg;F</span></p>
 					</div>
 					<div class="conditions">
-						<p>Current Temperature: <span class="actualnumber"> <span id="temp">placeholder</span>&deg;F</span></p>
 						<p id="precipitation">Precipitation: <span class="actualnumber"> 0% </span></p>
-						<p id="windSpeed">Wind Speed: <span class="actualnumber"><span id="inputspeed">placeholder</span> MPH</span></p>
+						<p id="windSpeed">Wind Speed: <span class="actualnumber"><span id="actualspeed">placeholder</span> MPH</span></p>
+						<p id="max-windspeed">Max Wind Speed: <span class="actualnumber"><span id="inputspeed">5</span> MPH SW</span></p>
 						<p id="windChill">Wind Chill: <span class="actualnumber"><span id="currentChill">placeholder</span>&deg;F</span></p>
 						<p id="forecasttext"><span class="actualnumber" id="box">Forecast: </span><span id="currentforecast">placeholder</span></p>
 					</div>
@@ -108,10 +109,10 @@
 				</table>
 			</section>
 
-			<article class="article-image">
+			<article class="town-article">
 				<h3>Rain Saves Tulips</h3>
 				<picture id="article-pic">
-					<img id="article-image" src="images/optimized-tulip-lily-nature-flowers-57429.jpeg" alt="picture of a tulip">
+					<img id="article-img" src="images/optimized-tulip-lily-nature-flowers-57429.jpeg" alt="picture of a tulip">
 				</picture>
 				<div id="para-container">
 					<p id="para-one">
@@ -130,7 +131,8 @@
 			<p class="footer-bar">&copy; 2017 All Rights Reserved | Accurate Weather | <span id="currentdate"></span>
 			</p>
 		</footer>
-		<!--<script src="scripts/windchill-9.js"></script>-->
+		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/windchill.js"></script>
 		<script src="scripts/wu-weather-franklin.js"></script>
 		<script src="scripts/hamburger.js"></script>
 		<script src="scripts/currentdate.js"></script>

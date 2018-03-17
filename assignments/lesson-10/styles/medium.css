@@ -24,6 +24,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
+		list-style-type: none;
 	}
 
 	.hamburger {
@@ -31,28 +32,26 @@
 	}
 
 	nav ul.hide{
-		display: inline-flex;
+		display: flex;
 	}
 
 	nav ul li {
-		font-size: 16px;
-		display: inline-flex;
-		background-color: #01ae01;
-		font-size: 1em;
-		border-width: 2px 0 1px 0px;
-		border-style: solid;
-		border-color: #000000;
+		display: flex;
+		margin: 0;
+		list-style-type: none;
+		padding: 0;
+		border: 0;
+
+
 	}
 
 	nav ul li a {
+		padding: 10px;
 		text-decoration: none;
+		list-style-type: none;
+		font-size: 1em;
 	}
 
-
-	nav ul li {
-		border: 0;
-		padding: .3rem;
-	}
 
 	main {
 		display: flex;
@@ -68,8 +67,9 @@
 	}
 
 	#main-pic {
-		flex-basis: 50%;
+		flex-basis: 55%;
 		align-self: stretch;
+		max-height: 30em;
 
 
 	}
@@ -98,6 +98,7 @@
 
 	#current-pic{
 		margin-right: 1%;
+		padding: 0;
 	}
 
 	#high, #low {
@@ -118,7 +119,7 @@
 
 	#main-data-container{
 		width:100%;
-		flex-basis: 50%;
+		flex-basis: 45%;
 	}
 
 	section.forecast {
@@ -134,6 +135,7 @@
 	section.forecast h3{
 		margin-top: 1em;
 	}
+
 	table {
 		margin: auto;
 		height: 50%;
@@ -181,10 +183,11 @@
 	#article-pic {
 		flex-basis: 50%;
 		align-self: stretch;
+		max-height: 30em;
 
 	}
 
-	#article-image {
+	#article-img {
 		width: 100%;
 		height: 100%;
 		max-height: 100%;
@@ -192,8 +195,7 @@
 
 	footer {
 		width: 100%;
-		border: 2px solid #000;
-		border-top: 2px solid #000;
+
 	}
 
 	footer aside {
@@ -281,15 +283,11 @@
 	}
 
 	#home-small {
-		display: none;
-	}
 
-	#home-medium {
 		display: block;
 		margin: 0;
 		margin-top: .5em;
 		align-self: flex-start;
-
 	}
 
 	#home-para-container {
