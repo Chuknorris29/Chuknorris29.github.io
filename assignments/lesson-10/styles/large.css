@@ -74,10 +74,10 @@
 
 	#forecasttext {
 		flex-basis: 100%;
-		justify-content:
+		justify-content: center;
 	}
 
-	.actualnumber{
+	.actualnumber {
 		font-weight: bold;
 		font-size: 20px
 	}
