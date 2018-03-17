@@ -32,17 +32,16 @@
 	}
 
 	nav ul.hide{
-		display: flex;
+		display: inline-flex;
 	}
 
 	nav ul li {
-		display: flex;
+		display: inline-flex;
 		margin: 0;
 		list-style-type: none;
 		padding: 0;
 		border: 0;
-
-
+		text-decoration: none;
 	}
 
 	nav ul li a {
