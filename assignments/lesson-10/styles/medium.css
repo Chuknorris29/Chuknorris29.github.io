@@ -106,7 +106,7 @@
 
 	section.weatherdata {
 		display: flex;
-		flex-direction: row;
+		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
 	}
@@ -119,6 +119,22 @@
 	#main-data-container{
 		width:100%;
 		flex-basis: 45%;
+	}
+
+	.periodforecast {
+		flex-basis: 80%;
+	}
+
+	#forecasttext {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#currentforecast {
+		width: 30em;
+		text-align: left;
+
 	}
 
 	section.forecast {

@@ -70,18 +70,23 @@
 		justify-content: space-around;
 
 	}
+
+
+	#forecasttext {
+		flex-basis: 100%;
+		justify-content:
+	}
+
 	.actualnumber{
 		font-weight: bold;
 		font-size: 20px
 	}
 
-	#high, #low{
-	}
 
 	.conditions, .highlow, .current{
 		flex-basis: 33.33%;
 	}
-	.right{
+	.right {
 		display: inherit;
 	}
 
@@ -93,7 +98,7 @@
 		font-size: 1em;
 	}
 
-	article{
+	article {
 		width: 100%;
 		border-top: 2px solid #000;
 		display: flex;
@@ -102,7 +107,6 @@
 	}
 
 	#article-pic {
-
 		flex-basis: 40%;
 		align-self: stretch;
 
@@ -266,13 +270,6 @@
 		border-top: 0;
 	}
 
-	#forecasttext {
-		display:flex;
-		flex-flow: row nowrap;
-		justify-content: center;
-		align-items: center;
-		text-align: left;
-	}
 
 
 }
