@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em) {
+
+
+	body{
+		margin: 0;
+		padding: 0;
+		border-top: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: #000000;
+	}
+
+
+	header h1{
+		font-size: 32px;
+		margin: 5px;
+		padding: 0;
+		order: 2;
+		flex-basis: 50%;
+		margin-right: auto;
+		align-self: center;
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+		border-top: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: #000000;
+	}
+
+	main{
+		height: 2000px;
+		width: 80%;
+		margin: auto;
+		border-top: 0;
+		background-color: #fff;
+		margin-top: 162px;
+	}
+
+
+
+
+}
