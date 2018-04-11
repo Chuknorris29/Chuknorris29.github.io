@@ -84,4 +84,8 @@
 		line-height: 2
 	}
 
+	/* start thank you */
+	main.thanks p{
+		margin-bottom: 20em;
+	}
 }
