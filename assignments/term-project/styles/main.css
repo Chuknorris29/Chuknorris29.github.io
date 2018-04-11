@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	border: 1px solid #000;
+
 }
 
 body{
@@ -124,12 +124,12 @@ nav ul li a{
 }
 
 
-ul li:hover{
+nav ul li:hover{
 	box-shadow: 2px 2px 5px #000;
 	background-color: #333333;
 }
 
-ul li:hover a{
+nav ul li:hover a{
 	color: #ffffff;
 }
 
@@ -142,22 +142,28 @@ main{
 	margin: 0;
 	border-top: 0;
 	background-color: #fff;
-	margin-top: 162px;
+	margin-top: 150px;
 	display: flex;
 	flex-flow: column nowrap;
-
 }
+
+
+
 
 h2, h3{
 	font-family:"Hammersmith one", sans-serif;
 	margin-bottom: 0;
 	color: #333;
+	margin-left: 3%;
 }
+
 
 
 p{
 	font-family: "Varela", sans-serif, helvetica;
-	width: 100%;
+	width: 97%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 section figure img{
@@ -166,44 +172,349 @@ section figure img{
 }
 
 section figure{
-	height: 150px;
-	width: 100%;
+	height: 200px;
+	width: 80%;
 	margin: 0;
 	margin-bottom: 16px;
-}
-
-
-#callToAction{
-	height: 2em;
-	background-color: #7f130d;
-	border-collapse: collapse;
-	border: 0;
-	box-shadow: 5px 5px 3pc #333;
-	margin: 1em;
-	margin-left: 5%;
-}
-
-#callToAction a{
-	color: #fff;
-	text-decoration: none;
-	font-family: "HammerSmith One", sans-serif;
+	margin:auto;
 }
 
 footer{
+	text-align: center;
 	height: 200px;
 	background-color: #7f130d;
 }
 
 
+footer p{
+	font-family: "Hammersmith one", sans-serif;
+	color: #000
+}
+/* start welcome */
 
-div.slide{
-	text-align: center;
-	padding: 20px;
+section.welcome figure{
+	box-shadow: 5px 5px 6px #333;
 }
 
-/* start Services */
+section.welcome figure:nth-child(8){
+	margin-bottom: 1em;
+}
+
+div.actionContainer{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 3%;
+	padding: 10px;
+	padding-left: 0;
+
+}
+
+#callToAction{
+	width: 100%;
+	padding: 10px;
+	background-color: #7f130d;
+	border: 0;
+	box-shadow: 5px 5px 3pc #333;
+	color: #fff;
+	text-decoration: none;
+	font-family: "HammerSmith One", sans-serif;
+	box-shadow: 3px 3px 7px #333;
+}
+
+
+/* start services */
+
+section.services h3 {
+	text-align: center;
+	margin: 1em;
+}
 
 table{
-	background-color:red;
+	font-family:"Hammersmith one", sans-serif;
+	background-color: #f3f3f3;
 	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid #333;
+	width: 80%;
+	margin: auto;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	box-shadow: 3px 3px 8px #333;
+}
+
+th {
+	font-weight:bold;
+	background-color: #7f130d;
+	color: #fff;
+}
+
+tr, td, th{
+	padding: .5em;
+	border: 1px solid #333;
+}
+
+#clause{
+	font-size: smaller;
+	text-align: center;
+	margin-bottom: 18em;
+}
+
+/* start products */
+
+main.product {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+section.products {
+	width:100%;
+	margin-top: 2em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	order: 3
+
+}
+
+main.product p:nth-child(2){
+	order:2;
+}
+
+section.products div {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+
+section.products div img{
+	width: 80%;
+	max-height: 400px;
+	min-height: 200px;
+}
+
+section.products div p{
+	text-align: left;
+	width: 94%;
+	margin-right: 3%;
+}
+
+section.products div h4{
+	font-size: 2em;
+	margin:0;
+	font-family: "Hammersmith one", sans-serif;
+}
+
+.hide{
+display: none;
+}
+
+#displayFirst{
+	display:block;
+}
+
+#next, #previous {
+	width: 100px;
+	height: 40px;
+	margin-bottom: 1em;
+}
+
+main.product h2{
+	flex-basis: 100%;
+	order:1
+}
+
+section.products div{
+	flex-basis: 100%;
+}
+
+div.productBtnContainer {
+	display: flex;
+	justify-content: center;
+}
+
+div.productBtnContainer:nth-child(3){
+	width: 100px;
+	order: 4;
+	flex-basis: 50%;
+}
+
+div.productBtnContainer:nth-child(5){
+	width: 100px;
+	order: 5;
+	flex-basis: 50%;
+}
+
+
+/* start events */
+
+main.events{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+main.events section figure{
+	margin-top: 1em;
+	margin-bottom: 2em;
+	box-shadow: 5px 5px 6px #333;
+}
+
+section.two {
+	width: 100%;
+}
+
+section.two h3{
+	font-size: 25px;;
+	margin: 1em;
+	margin-left: 3%;
+}
+
+form{
+	display: flex;
+	flex-flow: row wrap;
+	font-family: "Hammersmith one", sans-serif;
+	color: #333;
+}
+
+fieldset{
+	border: 0;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+
+}
+
+legend{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+label span{
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+label{
+	margin: 1em;
+}
+
+
+label.addCom{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+textarea{
+	resize: none;
+	flex-basis: 100%;
+	height: 10em;
+	margin-top:.5em;
+	border:1px solid #000;
+}
+
+#subBtn{
+	padding: 6px;
+	width: 100px;
+	background-color: #7f130d;
+	color: #fefefe;
+	border: 0;
+	box-shadow: 3px 3px 10px #333;
+
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+
+input:required:valid:focus {
+	box-shadow: 0 0 10px  #01ae01;
+	border: 1px solid #01ae01;
+}
+
+input:required:invalid:focus {
+	box-shadow: 0 0 10px red;
+	border: 1px solid red;
+}
+
+input:valid:focus {
+	box-shadow: 0 0 10px #01ae01;
+	border: 1px solid #01ae01;
+}
+
+/* start contact */
+
+main.contact{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+main.contact h2{
+	width: 100%;
+	margin: 1em;
+}
+main.contact section{
+	flex-basis: 100%;
+	text-align: center;
+}
+
+pre{
+	font-family: "Varela", sans-serif;
+}
+
+.iframeContainer {
+	width: 80%;
+	background-color: grey;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	box-shadow: 3px 3px 10px #000;
+}
+
+iframe {
+	border: 0;
+	margin: 5%;
+	width: 80%;
+	height: 300px;
+
+}
+
+main.contact form{
+	width: 100%;
+	margin-top: 2em;
+}
+
+/* start thank-you */
+main.thanks {
+	height: 300px;
+}
+
+main.thanks p {
+	width: 80%;
+	margin-left: 3%;
+}
+
+/* start adventure tours */
+
+main.adventure{
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+main.adventure section figure{
+	margin-top: 1em;
+	width: 100%;
+	box-shadow: 5px 5px 6px #333;
+}
+
+main.adventure section ul{
+	font-family: "Varela", sans-serif;
+}
+
+main.adventure p{
+	width: 94%;
 }

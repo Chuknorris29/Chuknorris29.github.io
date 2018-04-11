@@ -31,14 +31,264 @@
 	}
 
 	main{
-		height: 2000px;
 		width: 80%;
 		margin: auto;
 		border-top: 0;
 		background-color: #fff;
-		margin-top: 162px;
+		margin-top: 160px;
 	}
 
+	h2, h3, p{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	p{
+		width: 94%;
+	}
+
+
+
+	/* start home */
+	section.welcome{
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		font-size: 14px
+	}
+
+	section.welcome p{
+		font-family: "Varela", sans-serif;
+
+	}
+
+
+	section.welcome h3{
+		flex-basis: 100%;
+		margin:0;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 3%;
+	}
+
+	section.welcome figure:nth-of-type(1){
+		flex-basis: 45%;
+		order: 2;
+		margin: 0;
+		margin-bottom: 1em;
+	}
+
+	section.welcome figure:nth-of-type(2){
+		flex-basis: 45%;
+		order: 6;
+		margin-top: 2em;
+	}
+
+	section.welcome figure:nth-of-type(3){
+		flex-basis: 45%;
+		order: 7;
+		margin-top: 2em;
+	}
+
+	section.welcome p:nth-of-type(1){
+		flex-basis: 45%;
+		margin: 0;
+		align-self: stretch;
+		order: 1;
+		margin-bottom: 1em;
+	}
+
+	section.welcome p:nth-of-type(2){
+		flex-basis: 95%;
+		margin:0;
+		margin-bottom: 1em;
+		order: 3;
+	}
+
+	section.welcome p:nth-of-type(3){
+		flex-basis: 95%;
+		order: 4;
+		margin: 0;
+		margin-bottom: 1em;
+	}
+
+	#callToAction{
+		height: 2em;
+		background-color: #7f130d;
+		border-collapse: collapse;
+		border: 0;
+		box-shadow: 5px 5px 3pc #333;
+		margin: 1em;
+		font-size: 16px;
+	}
+
+	.actionContainer{
+		flex-basis: 100%;
+		order: 5;
+	}
+
+	/* start contact */
+	main.contact{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	main.contact h2{
+		width: 100%;
+		margin: 1em;
+		margin-left: 3%;
+	}
+
+	pre{
+		margin-left: 3%;
+	}
+
+	main.contact section{
+		flex-basis: 40%;
+		text-align: left;
+		margin-right: 3%;
+	}
+
+	.iframeContainer{
+		width: 100%;
+		flex-basis: 50%;
+		margin: 0;
+		height: 310px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	iframe {
+		margin: 0;
+		width: 97%;
+		border: 2px solid #000;
+		height: 300px;
+
+	}
+	main.contact form{
+		margin: auto;
+		margin-top: 2em;
+	}
+
+	#subBtn{
+		margin-bottom: 2em;
+	}
+	/* start adventure tours */
+
+	main.adventure{
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	main.adventure section{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	main.adventure section h3{
+		flex-basis: 100%;
+	}
+	main.adventure section figure{
+		margin-top: 1em;
+		flex-basis: 40%;
+	}
+
+	main.adventure section ul{
+		font-family: "Varela", sans-serif;
+		flex-basis: 40%;
+	}
+
+	main.adventure ul{
+		line-height: 2
+	}
+
+
+	/* start events */
+	main.events {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	main.events section.events {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	main.events figure{
+		flex-basis: 47%;
+		margin-right: 3%;
+	}
+
+	main.events ul{
+		flex-basis: 47%;
+		line-height: 3;
+	}
+
+	main.events h2{
+		flex-basis: 100%;
+	}
+
+	main.events h3{
+		flex-basis: 100%;
+	}
+
+	/* start products */
+
+	section.products div{
+		order:2;
+		flex-basis: 80%;
+	}
+
+	main.product h2{
+		flex-basis: 100%;
+		order:1
+	}
+
+
+	section.products {
+		width:80%;
+		order: 4
+
+	}
+
+	main.product p:nth-child(2){
+		order:2;
+	}
+
+	div.productBtnContainer {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	div.productBtnContainer:nth-child(3){
+		width: 100px;
+		order: 3;
+		flex-basis: 10%;
+
+	}
+
+	div.productBtnContainer:nth-child(5){
+		width: 100px;
+		order: 4;
+		flex-basis: 10%;
+	}
+
+	#next, #previous {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 0;
+	}
+
+	main.product p:nth-child(4){
+		margin-bottom: 10em;
+	}
 
 
 

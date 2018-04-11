@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - keyword | The Mountain Spoke</title>
 		<meta name="author" content="Charles Mikolyski">
 		<meta name="description" content="Home page for The Mountain Spoke online store">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Varela" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 		<link href="styles/normalize.css" rel="stylesheet">
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/medium.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 				<h1>The Rock That Keeps You Rollin'</h1>
 				<picture> <img src="images/optimized-moutain-spoke-logo.png" alt="Mountain Spoke Logo"></picture>
 				<div class="buttoncontainer">
-					<button type="button">&#9776;</button>
+					<button type="button" class="navigation">&#9776;</button>
 				</div>
 			</header>
 
@@ -36,18 +37,51 @@
 				</nav>
 			</div>
 		</div>
-		<main>
+		<main class="contact">
+
 			<h2>
 				Contact Us
 			</h2>
 
+			<section>
+				<h3> The Mountain Spoke</h3>
+				<pre>
+3950 Valley Commons Drive
+Bozeman, MT
+59178
+Phone: (555)555-1234
+				</pre>
+			</section>
+			<div class="iframeContainer">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354787!2d-111.09290618463258!3d45.67227662755639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523391712390" width="600" height="450" allowfullscreen></iframe>
+			</div>
+			<form action="thank-you.html" method="get">
+				<fieldset>
+					<legend>Contact Information:</legend>
+
+					<label><span class="required">Full name: </span><input type="text" name="fullName" placeholder="Ex: John Smith" pattern="[a-zA-Z ]{5,99}" required></label>
+
+					<label><span>Email: </span><input type="email" name="email" placeholder="Ex: example@example.com"></label>
+
+					<label><span class="required">Phone Number: </span><input type="tel" name="phone" placeholder="##########" pattern="[0-9]{10}" required></label>
+				</fieldset>
+
+				<label class="submitForm"><input type="submit" value="Submit" id="subBtn"></label>
+
+			</form>
+
+
+
+
+
 		</main>
 		<footer>
-
+			<p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="scripts/toggle-nav.js"></script>
 		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/current-date.js"></script>
 	</body>
 </html>

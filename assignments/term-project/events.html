@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - keyword | The Mountain Spoke</title>
 		<meta name="author" content="Charles Mikolyski">
 		<meta name="description" content="Home page for The Mountain Spoke online store">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Varela" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 		<link href="styles/normalize.css" rel="stylesheet">
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/medium.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 				<h1>The Rock That Keeps You Rollin'</h1>
 				<picture> <img src="images/optimized-moutain-spoke-logo.png" alt="Mountain Spoke Logo"></picture>
 				<div class="buttoncontainer">
-					<button type="button">&#9776;</button>
+					<button type="button" class="navigation">&#9776;</button>
 				</div>
 			</header>
 
@@ -36,17 +37,65 @@
 				</nav>
 			</div>
 		</div>
-		<main>
+		<main class="events">
 			<h2>
 				Race Events
 			</h2>
+
+			<section class="events">
+				<h3>
+				Cycle The Continental Divide!
+				</h3>
+				<p> Looking for a bike race event that you will never forget? You found it. The Continental Divide race is an event like no other. You and hundreds of other people will come together for an annual event that takes you through a biking experience that will test you to your limits.</p>
+				<ul>
+					<li>Date: July 23th-27th</li>
+					<li>Distance: Approximately 24 Miles</li>
+					<li>Cost: $100.00 Per Person</li>
+				</ul>
+				<figure>
+					<img src="images/event.jpg" alt="picture of a large bike race">
+				</figure>
+				<p>The bike route starts at the Bridger Mountains Trail, then cuts into Sypse Canyon Trail. The bike route ends back at the Bridger Mountains Trail starting point.</p>
+				<p>Vendors will be setup at the event start/end location, but be prepared to pay for food and beverages. Participants are exprected to attain thair own lodging, if required. However, contact us if you would like a recommendation!</p>
+				<p>Participants must be 18 years of age or older and must be willing to consent to a medical release form.</p>
+				<p>Please use the form below to sign up for the event.</p>
+
+
+			</section>
+			<section class="events two">
+				<h3> Registration Form:</h3>
+				<form action="thank-you.html" method="get">
+
+					<fieldset>
+						<legend>Personal Information:</legend>
+
+						<label><span class="required">Full name: </span><input type="text" name="fullName" placeholder="Ex: John Smith" pattern="[a-zA-Z ]{5,99}" required></label>
+
+						<label><span>Email: </span><input type="email" name="email" placeholder="Ex: example@example.com"></label>
+
+						<label><span class="required">Phone Number: </span><input type="tel" name="phone" placeholder="##########" pattern="[0-9]{10}" required></label>
+						<label><span class="required">Home State or Country: </span><input type="text" name="stateOrCountry" placeholder="Oklahoma" required></label>
+						<label><span class="required">Birth Date: </span><input type="date" name="date"  required></label>
+					</fieldset>
+
+					<label class="addCom"><span>Special Accommodations/Comments: </span><textarea  name="addinfo"></textarea></label>
+
+					<label class="submitForm"><input type="submit" value="Sign Up!" id="subBtn"></label>
+				</form>
+
+
+
+			</section>
+
+
 		</main>
 		<footer>
-
+			<p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="scripts/toggle-nav.js"></script>
 		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/current-date.js"></script>
 	</body>
 </html>

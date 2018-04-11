@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - keyword | The Mountain Spoke</title>
 		<meta name="author" content="Charles Mikolyski">
 		<meta name="description" content="Home page for The Mountain Spoke online store">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Varela" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 		<link href="styles/normalize.css" rel="stylesheet">
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/medium.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 				<h1>The Rock That Keeps You Rollin'</h1>
 				<picture> <img src="images/optimized-moutain-spoke-logo.png" alt="Mountain Spoke Logo"></picture>
 				<div class="buttoncontainer">
-					<button type="button">&#9776;</button>
+					<button type="button" class="navigation">&#9776;</button>
 				</div>
 			</header>
 
@@ -36,17 +37,50 @@
 				</nav>
 			</div>
 		</div>
-		<main>
+		<main class="product">
 			<h2>
 				Products
 			</h2>
+			<p>Please use the arrows below to browse through the latest in bike technology. Whether you are a beginner or a seasoned professional, we got you covered!</p>
+			<div class="productBtnContainer"><button type="button" id="previous">
+				&#8678;</button></div>
+			<section class="products">
+				<h3 class="hide">Current bike products</h3>
+				<div class="productContainer">
+					<div class="hide" id="displayFirst">
+						<h4>Basix 405</h4>
+						<img src="images/prod-bike-one.jpg" alt="Picture of bicycle">
+						<p>The Basix 405 is designed for the hobbyist that is looking for the tool that will help them acheive the next level. It comes standard with 26" diameter wheels, and Toughmax sprocket and chian set. It is available in black, red, and blue colors. Contact us for information on  custom paint scheme.</p>
+						<p>Price: $378.56</p>
+					</div>
+					<div class="hide">
+						<h4>Speedway SX Pro</h4>
+						<img src="images/prod-bike-two.jpg" alt="Picture of bicycle">
+						<p>The Speedway SX Pro is the bike that takes you through the race in style and comfort. Made out of aircraft grade aluminium, it is designed for strength and light weight. High quality Springer shocks are standard equipped to provide a smooth ride, even on the roughest terrain. It also comes with the latest ToughMax chain and sprocket set. Can be purchased in black, blue, and silver colors. Contact us for intormation on a custom paint scheme.</p>
+						<p>Price: $1,119.99</p>
+					</div>
+					<div class="hide">
+						<h4>Mountain Rider</h4>
+						<img src="images/prod-bike-three.jpg" alt="Picture of bicycle">
+						<p>If you are looking for a tough, riliable bike that will get you up, and back down hill, this is it. It is time tested and has proven itself to be a very strong bike that can handle even the toughest conditions. It comes standard with the Toughmax chain and sprocket set, along with Alpha shocks, and 29" diameter wheels. It can be purchased in green, black, and woodland camo paint colors. Contact us for information on custom paint scheme.</p>
+						<p>Price: $879.65</p>
+					</div>
+				</div>
+
+			</section>
+			<div class="productBtnContainer"><button type="button" id="next">
+				&#8680;</button></div>
+
 		</main>
 		<footer>
-
+			<p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
 		</footer>
 
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="scripts/prod-menu.js"></script>
 		<script src="scripts/toggle-nav.js"></script>
 		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/current-date.js"></script>
 	</body>
 </html>

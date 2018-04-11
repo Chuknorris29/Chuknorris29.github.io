@@ -6,7 +6,5 @@ $(function(){
 	}, function(){
 		// This code executes when the mouse pointer leaves the list item
 		$(this).removeClass('openSesame');
-
 	});
-
 })

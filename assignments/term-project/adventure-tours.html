@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - keyword | The Mountain Spoke</title>
 		<meta name="author" content="Charles Mikolyski">
 		<meta name="description" content="Home page for The Mountain Spoke online store">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Varela" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 		<link href="styles/normalize.css" rel="stylesheet">
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/medium.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 				<h1>The Rock That Keeps You Rollin'</h1>
 				<picture> <img src="images/optimized-moutain-spoke-logo.png" alt="Mountain Spoke Logo"></picture>
 				<div class="buttoncontainer">
-					<button type="button">&#9776;</button>
+					<button type="button" class="navigation">&#9776;</button>
 				</div>
 			</header>
 
@@ -36,18 +37,54 @@
 				</nav>
 			</div>
 		</div>
-		<main>
+		<main class="adventure">
 			<h2>
 				Adventure Tours
 			</h2>
+			<section>
+				<h3>What are the Adventure Tours?</h3>
+				<p>The Adventure Tours are professionally guided tours designed for people of all skill levels. They are held twice daily, and take you through some of the most beautiful bike paths of the Bozeman area.</p>
+			</section>
+			<section>
+				<h3>Bridger Mountains Trail Tour</h3>
+				<p>This tour takes the participants on a journy through the famous Bridger Mountains Trail 534. The elevation gain can reach 2,761 feet, yikes!</p>
+				<ul>
+					<li>Meet-up Time: 6:00AM</li>
+					<li>Skill Level: Moderate-Difficult</li>
+					<li>Length: 6.7 Miles</li>
+					<li>Location: Bridger Mountain Trail</li>
+					<li>Cost: $10.00 Per Person</li>
+				</ul>
+				<figure>
+					<img src="images/home-scenic.jpg" alt="scenic picture of river and mountain">
+				</figure>
+			</section>
+
+			<section>
+				<h3>Sourdough Ridge Loop Tour</h3>
+				<p>This tour takes the participants through the Sourdough Rdige Loop trail. The distance is shorter, and the inclines are not as extreme as the Bridger Mountains Trail Tour. We recommend this trail for people who are getting started in the sport.</p>
+				<ul>
+					<li>Meet-up Time: 7:00PM</li>
+					<li>Skill Level: Easy-Moderate</li>
+					<li>Length: 1.9 Miles</li>
+					<li>Location: Sourdough Ridge Loop</li>
+					<li>Cost: $10.00 Per Person</li>
+				</ul>
+				<figure>
+					<img src="images/home-bike-night.jpg" alt="picture of bicyclist at dusk">
+				</figure>
+			</section>
+
+			<p>Contact us to sign up for the tour and get exact meeting location.</p>
 
 		</main>
 		<footer>
-
+			<p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="scripts/toggle-nav.js"></script>
 		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/current-date.js"></script>
 	</body>
 </html>

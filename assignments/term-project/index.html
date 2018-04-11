@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home - keyword | The Mountain Spoke</title>
 		<meta name="author" content="Charles Mikolyski">
 		<meta name="description" content="Home page for The Mountain Spoke online store">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Varela" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 		<link href="styles/normalize.css" rel="stylesheet">
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/medium.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 				<h1>The Rock That Keeps You Rollin'</h1>
 				<picture> <img src="images/optimized-moutain-spoke-logo.png" alt="Mountain Spoke Logo"></picture>
 				<div class="buttoncontainer">
-					<button type="button">&#9776;</button>
+					<button type="button" class="navigation">&#9776;</button>
 				</div>
 			</header>
 
@@ -42,28 +43,33 @@
 			</h2>
 			<section class="welcome">
 				<h3>Welcome to The Mountain Spoke Home Page!</h3>
-				<p>Since 1950, The Mountain Spoke has been providing excellent products and services to bicycle enthusiasts in Bozeman, Montana and surrounding areas. Over the years, The Mountain Spoke has acheived a reputation of quality that many have found unparalled. This has lead many bike professionals and hobbyists from around the world to come to The Mountain Spoke for products, repairs, and training.</p>
+				<p>Since 1950, The Mountain Spoke has been providing excellent products and services to bicycle enthusiasts in Bozeman, Montana and surrounding areas. Over the years, The Mountain Spoke has acheived a reputation of quality that is unparalled. This has lead many bike professionals and hobbyists from around the world to come to The Mountain Spoke for products, repairs, and training.</p>
 				<figure>
-					<img src="images/optimized-moutain-spoke-logo.png" alt="Dirt bike on a mountain">
+					<img src="images/home-bike-rider.jpg" alt="Dirt bike on a mountain">
 				</figure>
 				<p>Whether you are an extreme bike fanatic, or just getting started, The Mountain Spoke has got you covered. We offer the latest and greatest in bicycle technology to give you the edge you need to reach the level you crave. Already have a bike but need some repairs? We can handle that, too! </p>
 				<figure>
-					<img src="images/optimized-moutain-spoke-logo.png" alt="Dirt bike on a mountain">
+					<img src="images/home-scenic.jpg" alt="Dirt bike on a mountain">
 				</figure>
-				<p>Looking for a world class race that will test your capabilities to their absolute limit? See what we have planned on the events page. You wont be dissapointed. Not quite ready for the whole 100 mile endurance race, but still want to get outside and enjoy a ride you wont forget? Then our adventure tours are for you. Click on the button below to sign up now!</p>
-				<button type="button" id="callToAction"><a href="adventure-tours.html">Sign Up Now!</a></button>
-				<figure>
-					<img src="images/optimized-moutain-spoke-logo.png" alt="Dirt bike on a mountain">
+				<p>Not quite ready for the whole 100 mile endurance race, but still want to get outside and enjoy a ride you wont forget? Then check out our adventure tours page in the navigation. We have tours daily that will not only be fun, but help get you to the next level in racing performince. Looking for a world class race that will test your capabilities to their absolute limit? See what we have planned on the events page. You wont be dissapointed.  Click on the button below to sign up now!</p>
+				<div class="actionContainer">
+					<a href="events.html" id="callToAction">Sign Up Now!</a>
+				</div>
+					<figure>
+					<img src="images/home-bike-night.jpg" alt="Dirt bike on a mountain">
 				</figure>
 
 			</section>
 		</main>
 		<footer>
+			<p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+
 
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="scripts/toggle-nav.js"></script>
 		<script src="scripts/wayfinding.js"></script>
+		<script src="scripts/current-date.js"></script>
 	</body>
 </html>
