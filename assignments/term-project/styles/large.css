@@ -52,7 +52,7 @@
 
 	.iframeContainer{
 		width: 100%;
-		flex-basis: 55%;
+		flex-basis: 50%;
 		margin: 0;
 		height: 310px;
 		display: flex;
@@ -88,4 +88,6 @@
 	main.thanks p{
 		margin-bottom: 20em;
 	}
+
+
 }
