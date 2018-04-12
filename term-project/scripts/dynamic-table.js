@@ -1,5 +1,5 @@
 var tableBody = document.querySelector("tbody");
-var requestURL = "https://chuknorris29.github.io/assignments/term-project/data/service-data.json";
+var requestURL = "https://chuknorris29.github.io/term-project/data/service-data.json";
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
