@@ -50,6 +50,7 @@
 	footer{
 		width: 80%;
 		margin:auto;
+		height: 16em;
 	}
 
 	/* start home */
@@ -241,6 +242,7 @@
 	section.products div{
 		order:2;
 		flex-basis: 80%;
+		margin-bottom: 5em;
 	}
 
 	main.product h2{
@@ -291,6 +293,12 @@
 	/* start thank you */
 	main.thanks p{
 		margin-bottom: 35em;
+	}
+
+	/* start services */
+
+	#clause{
+		margin-bottom: 21em;
 	}
 
 }

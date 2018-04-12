@@ -178,17 +178,21 @@ footer{
 	font-family: "Hammersmith one", sans-serif;
 	text-align: center;
 	background-color: #7f130d;
+	height: 18em;
+
 }
 
 footer aside{
 	color: #000;
 	margin: 1em;
+	margin-top: 2em;
 }
 
 footer p{
 	font-family: "Hammersmith one", sans-serif;
 	color: #000;
 	margin: 1em;
+	width: 90%;
 
 }
 
@@ -275,8 +279,8 @@ tr, td, th{
 #clause{
 	font-size: smaller;
 	text-align: center;
-	margin-bottom: 18em;
 }
+
 
 /* start products */
 
@@ -364,7 +368,6 @@ div.productBtnContainer:nth-child(5){
 	order: 5;
 	flex-basis: 50%;
 }
-
 
 /* start events */
 
