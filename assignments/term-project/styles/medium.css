@@ -47,7 +47,10 @@
 		width: 94%;
 	}
 
-
+	footer{
+		width: 80%;
+		margin:auto;
+	}
 
 	/* start home */
 	section.welcome{
@@ -114,10 +117,6 @@
 
 	#callToAction{
 		height: 2em;
-		background-color: #7f130d;
-		border-collapse: collapse;
-		border: 0;
-		box-shadow: 5px 5px 3pc #333;
 		margin: 1em;
 		font-size: 16px;
 	}

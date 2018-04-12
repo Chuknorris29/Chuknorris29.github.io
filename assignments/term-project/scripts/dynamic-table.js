@@ -12,6 +12,9 @@ request.onload = function() {
 }
 
 
+
+
+
 function showservice(jsonObj) {
 	var repairService = jsonObj["services"];
 

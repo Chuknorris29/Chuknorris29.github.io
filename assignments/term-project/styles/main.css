@@ -147,17 +147,12 @@ main{
 	flex-flow: column nowrap;
 }
 
-
-
-
 h2, h3{
 	font-family:"Hammersmith one", sans-serif;
 	margin-bottom: 0;
 	color: #333;
 	margin-left: 3%;
 }
-
-
 
 p{
 	font-family: "Varela", sans-serif, helvetica;
@@ -182,7 +177,6 @@ section figure{
 footer{
 	font-family: "Hammersmith one", sans-serif;
 	text-align: center;
-	height: 200px;
 	background-color: #7f130d;
 }
 
@@ -199,19 +193,21 @@ footer p{
 }
 
 footer div.linkContainer{
-
 	font-family: "Hammersmith one", sans-serif;
-	background-color: red;
-	padding: 10px;
+	background-color: #ff2619;
 	box-shadow: 3px 3px 10px #000;
-	width: 10em;
-	display: inline-block;
+	width:10em;
+	display: inline-flex;
+	flex-flow: row nowrap;
 	margin: auto;
+	margin-bottom: 1em;
 }
 
 footer a{
 	color: #fff;
 	text-decoration: none;
+	padding: 10px;
+	flex-basis: 100%;
 }
 
 /* start welcome */
@@ -234,15 +230,14 @@ div.actionContainer{
 }
 
 #callToAction{
+	background-color: #ff2619;
 	width: 100%;
 	padding: 10px;
-	background-color: #7f130d;
 	border: 0;
-	box-shadow: 5px 5px 3pc #333;
 	color: #fff;
 	text-decoration: none;
 	font-family: "HammerSmith One", sans-serif;
-	box-shadow: 3px 3px 7px #333;
+	box-shadow: 3px 3px 10px #000;
 }
 
 
@@ -268,7 +263,7 @@ table{
 
 th {
 	font-weight:bold;
-	background-color: #7f130d;
+	background-color: #ff2619;
 	color: #fff;
 }
 
@@ -409,14 +404,16 @@ form{
 fieldset{
 	border: 0;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 	width: 100%;
+	padding: 0;
 
 }
 
 legend{
 	font-size: 1.1em;
 	font-weight: bold;
+	margin-left: 3%;
 }
 
 
@@ -425,12 +422,12 @@ label{
 	margin: 1em;
 	display: flex;
 	flex-flow: row wrap;
+	margin-left: 3%
 }
 
 label span{
 	font-weight: bold;
-	flex-basis: 100%;
-
+	width: 100%;
 }
 
 main.events label input{
@@ -456,7 +453,7 @@ textarea{
 #subBtn{
 	padding: 6px;
 	width: 100px;
-	background-color: #7f130d;
+	background-color: #ff2619;
 	color: #fefefe;
 	border: 0;
 	box-shadow: 3px 3px 10px #333;
